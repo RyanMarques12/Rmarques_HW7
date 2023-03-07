@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survery Page 1</title>
-    <link rel="stylesheet1.css" >
+    <title>Survey Page 1</title>
+    <link rel="stylesheet" href="./stylesheet1.css">
 </head>
 <body>
-    <h1> Survery Page 1</h1>
+    <h1> Survey Page 1</h1>
     <form> 
         <fieldset> 
             <legend> Contact Information</legend>
             <div> 
                 <label for="fname" >First name:
-                    <input id="fname" type="text" autofocus >
+                    <input id="fname" type="text" autofocus required>
                 </label>
             </div>
             <div>
                 <label for="lname" > Last Name: 
-                    <input id="lname" type="text">
+                    <input id="lname" type="text" required>
                 </label>
             </div><div> 
                 <label for="email" > Email Address:
-                    <input id="email" type="email">
+                    <input id="email" type="email" required>
                 </label>
                 </div><div>
-                <label for="phonenumber" >
-                    <input type="tel" name="phonenumber" > Phone Number 
+                <label for="phonenumber" > Phone Number:
+                    <input type="tel" name="phonenumber" maxlength="10" required> 
                 </label> 
             </div>
         </fieldset>
         <fieldset> 
+            <legend> Gender </legend>
             <div><label for="female">
                 <input type="radio" id="female" name="gender" value="female" > Female
             </label>
@@ -49,5 +50,8 @@
             </div>
         </fieldset>
     </form>
+    <button type="button" onclick="window.location.href='./Survey-2.html';">
+    Next Page
+    </button>
 </body>
 </html>

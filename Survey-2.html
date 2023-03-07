@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Page 2</title>
 </head>
+<h1>Survey Page 2</h1>
 <body>
-    
+    <form>
+        <fieldset>
+         <legend> Education </legend>
+          <label for="dropdown">Select an option:</label>
+         <select id="dropdown" name="dropdown">
+         <option value="option1">Did not complete high school</option>
+         <option value="option2">High school degree</option>
+         <option value="option3">Bachelors degree</option>
+         <option value="option4">Master's degree</option>
+         <option value="option5">Doctorate's degree</option>
+          <option value="option6">Other</option>
+         </select>
+         </fieldset>
+        <br>
+    <fieldset>
+            <legend> Region </legend>
+        <label for="option1">Northeast</label>
+        <input type="checkbox" id="option1" name="Region" value="Northeast">
+        <br>
+         <label for="option2">Midwest</label>
+         <input type="checkbox" id="option2" name="Region" value="Midwest">
+         <br>
+        <label for="option3">West</label>
+        <input type="checkbox" id="option3" name="Region" value="West">
+         <br>
+         <label for="option4">South</label>
+         <input type="checkbox" id="option4" name="Region" value="South">
+    </fieldset>
+    </form>
+    <button type="button" onclick="window.location.href='./Survey-1.html';">
+    Previous Page
+    </button>
+    <button type="submit" form="./Survey-2.html" onclick="window.location.href='./ThankYou.html';">
+    Submit Form
+    </button>
 </body>
 </html>
